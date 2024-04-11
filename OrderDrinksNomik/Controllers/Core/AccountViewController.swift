@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AccountViewController.swift
 //  OrderDrinksNomik
 //
 //  Created by Pinocchio on 2024/4/11.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        title = "帳戶"
+        view.backgroundColor = .systemYellow
     }
-
-
 }
-

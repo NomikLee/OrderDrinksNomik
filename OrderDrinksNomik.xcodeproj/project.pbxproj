@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		6F0AF9352BC7C6E4004DBD16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF9342BC7C6E4004DBD16 /* AppDelegate.swift */; };
 		6F0AF9372BC7C6E4004DBD16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF9362BC7C6E4004DBD16 /* SceneDelegate.swift */; };
-		6F0AF9392BC7C6E4004DBD16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF9382BC7C6E4004DBD16 /* ViewController.swift */; };
-		6F0AF93C2BC7C6E4004DBD16 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6F0AF93B2BC7C6E4004DBD16 /* Base */; };
+		6F0AF9392BC7C6E4004DBD16 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF9382BC7C6E4004DBD16 /* MainTabViewController.swift */; };
 		6F0AF93E2BC7C6E5004DBD16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F0AF93D2BC7C6E5004DBD16 /* Assets.xcassets */; };
 		6F0AF9412BC7C6E5004DBD16 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6F0AF9402BC7C6E5004DBD16 /* Base */; };
+		6F0AF94F2BC7CE4B004DBD16 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF94E2BC7CE4B004DBD16 /* MenuViewController.swift */; };
+		6F0AF9512BC7D1B8004DBD16 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF9502BC7D1B8004DBD16 /* OrderViewController.swift */; };
+		6F0AF9532BC7D1CF004DBD16 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF9522BC7D1CF004DBD16 /* SearchViewController.swift */; };
+		6F0AF9552BC7D200004DBD16 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF9542BC7D200004DBD16 /* AccountViewController.swift */; };
+		6F0AF9572BC7D55C004DBD16 /* NavAppearence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF9562BC7D55C004DBD16 /* NavAppearence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6F0AF9312BC7C6E4004DBD16 /* OrderDrinksNomik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderDrinksNomik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F0AF9342BC7C6E4004DBD16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F0AF9362BC7C6E4004DBD16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F0AF9382BC7C6E4004DBD16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6F0AF93B2BC7C6E4004DBD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F0AF9382BC7C6E4004DBD16 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		6F0AF93D2BC7C6E5004DBD16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F0AF9402BC7C6E5004DBD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F0AF9422BC7C6E5004DBD16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F0AF94E2BC7CE4B004DBD16 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		6F0AF9502BC7D1B8004DBD16 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		6F0AF9522BC7D1CF004DBD16 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6F0AF9542BC7D200004DBD16 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		6F0AF9562BC7D55C004DBD16 /* NavAppearence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavAppearence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		6F0AF9332BC7C6E4004DBD16 /* OrderDrinksNomik */ = {
 			isa = PBXGroup;
 			children = (
-				6F0AF9342BC7C6E4004DBD16 /* AppDelegate.swift */,
-				6F0AF9362BC7C6E4004DBD16 /* SceneDelegate.swift */,
-				6F0AF9382BC7C6E4004DBD16 /* ViewController.swift */,
-				6F0AF93A2BC7C6E4004DBD16 /* Main.storyboard */,
-				6F0AF93D2BC7C6E5004DBD16 /* Assets.xcassets */,
-				6F0AF93F2BC7C6E5004DBD16 /* LaunchScreen.storyboard */,
+				6F0AF94D2BC7C831004DBD16 /* ViewModels */,
+				6F0AF94C2BC7C828004DBD16 /* Views */,
+				6F0AF94B2BC7C81A004DBD16 /* Models */,
+				6F0AF9492BC7C7EA004DBD16 /* Controllers */,
+				6F0AF9482BC7C792004DBD16 /* Resources */,
 				6F0AF9422BC7C6E5004DBD16 /* Info.plist */,
 			);
 			path = OrderDrinksNomik;
+			sourceTree = "<group>";
+		};
+		6F0AF9482BC7C792004DBD16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F0AF9342BC7C6E4004DBD16 /* AppDelegate.swift */,
+				6F0AF9362BC7C6E4004DBD16 /* SceneDelegate.swift */,
+				6F0AF93D2BC7C6E5004DBD16 /* Assets.xcassets */,
+				6F0AF93F2BC7C6E5004DBD16 /* LaunchScreen.storyboard */,
+				6F0AF9562BC7D55C004DBD16 /* NavAppearence.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6F0AF9492BC7C7EA004DBD16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F0AF94A2BC7C7FD004DBD16 /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6F0AF94A2BC7C7FD004DBD16 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6F0AF9382BC7C6E4004DBD16 /* MainTabViewController.swift */,
+				6F0AF94E2BC7CE4B004DBD16 /* MenuViewController.swift */,
+				6F0AF9522BC7D1CF004DBD16 /* SearchViewController.swift */,
+				6F0AF9502BC7D1B8004DBD16 /* OrderViewController.swift */,
+				6F0AF9542BC7D200004DBD16 /* AccountViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6F0AF94B2BC7C81A004DBD16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F0AF94C2BC7C828004DBD16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6F0AF94D2BC7C831004DBD16 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +187,6 @@
 			files = (
 				6F0AF93E2BC7C6E5004DBD16 /* Assets.xcassets in Resources */,
 				6F0AF9412BC7C6E5004DBD16 /* Base in Resources */,
-				6F0AF93C2BC7C6E4004DBD16 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +197,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F0AF9392BC7C6E4004DBD16 /* ViewController.swift in Sources */,
+				6F0AF9532BC7D1CF004DBD16 /* SearchViewController.swift in Sources */,
+				6F0AF9392BC7C6E4004DBD16 /* MainTabViewController.swift in Sources */,
+				6F0AF9552BC7D200004DBD16 /* AccountViewController.swift in Sources */,
+				6F0AF9512BC7D1B8004DBD16 /* OrderViewController.swift in Sources */,
 				6F0AF9352BC7C6E4004DBD16 /* AppDelegate.swift in Sources */,
 				6F0AF9372BC7C6E4004DBD16 /* SceneDelegate.swift in Sources */,
+				6F0AF94F2BC7CE4B004DBD16 /* MenuViewController.swift in Sources */,
+				6F0AF9572BC7D55C004DBD16 /* NavAppearence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6F0AF93A2BC7C6E4004DBD16 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6F0AF93B2BC7C6E4004DBD16 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6F0AF93F2BC7C6E5004DBD16 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +353,6 @@
 				INFOPLIST_FILE = OrderDrinksNomik/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +380,6 @@
 				INFOPLIST_FILE = OrderDrinksNomik/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
