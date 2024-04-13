@@ -17,6 +17,8 @@
 		6F0AF9532BC7D1CF004DBD16 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF9522BC7D1CF004DBD16 /* SearchViewController.swift */; };
 		6F0AF9552BC7D200004DBD16 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF9542BC7D200004DBD16 /* AccountViewController.swift */; };
 		6F0AF9572BC7D55C004DBD16 /* NavAppearence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF9562BC7D55C004DBD16 /* NavAppearence.swift */; };
+		6F0AF95A2BC8CC5D004DBD16 /* LogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF9592BC8CC5D004DBD16 /* LogoImageView.swift */; };
+		6F0AF95C2BC91B1F004DBD16 /* CollectionMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0AF95B2BC91B1F004DBD16 /* CollectionMenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		6F0AF9522BC7D1CF004DBD16 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		6F0AF9542BC7D200004DBD16 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		6F0AF9562BC7D55C004DBD16 /* NavAppearence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavAppearence.swift; sourceTree = "<group>"; };
+		6F0AF9592BC8CC5D004DBD16 /* LogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImageView.swift; sourceTree = "<group>"; };
+		6F0AF95B2BC91B1F004DBD16 /* CollectionMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionMenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		6F0AF9332BC7C6E4004DBD16 /* OrderDrinksNomik */ = {
 			isa = PBXGroup;
 			children = (
+				6F0AF9582BC8CB5F004DBD16 /* CustomViews */,
 				6F0AF94D2BC7C831004DBD16 /* ViewModels */,
 				6F0AF94C2BC7C828004DBD16 /* Views */,
 				6F0AF94B2BC7C81A004DBD16 /* Models */,
@@ -81,7 +86,6 @@
 				6F0AF9362BC7C6E4004DBD16 /* SceneDelegate.swift */,
 				6F0AF93D2BC7C6E5004DBD16 /* Assets.xcassets */,
 				6F0AF93F2BC7C6E5004DBD16 /* LaunchScreen.storyboard */,
-				6F0AF9562BC7D55C004DBD16 /* NavAppearence.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -116,6 +120,7 @@
 		6F0AF94C2BC7C828004DBD16 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6F0AF95B2BC91B1F004DBD16 /* CollectionMenuTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +130,15 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6F0AF9582BC8CB5F004DBD16 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				6F0AF9562BC7D55C004DBD16 /* NavAppearence.swift */,
+				6F0AF9592BC8CC5D004DBD16 /* LogoImageView.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +214,10 @@
 				6F0AF9532BC7D1CF004DBD16 /* SearchViewController.swift in Sources */,
 				6F0AF9392BC7C6E4004DBD16 /* MainTabViewController.swift in Sources */,
 				6F0AF9552BC7D200004DBD16 /* AccountViewController.swift in Sources */,
+				6F0AF95C2BC91B1F004DBD16 /* CollectionMenuTableViewCell.swift in Sources */,
 				6F0AF9512BC7D1B8004DBD16 /* OrderViewController.swift in Sources */,
 				6F0AF9352BC7C6E4004DBD16 /* AppDelegate.swift in Sources */,
+				6F0AF95A2BC8CC5D004DBD16 /* LogoImageView.swift in Sources */,
 				6F0AF9372BC7C6E4004DBD16 /* SceneDelegate.swift in Sources */,
 				6F0AF94F2BC7CE4B004DBD16 /* MenuViewController.swift in Sources */,
 				6F0AF9572BC7D55C004DBD16 /* NavAppearence.swift in Sources */,

@@ -17,7 +17,6 @@ class MainTabViewController: UITabBarController {
         let vc3 = OrderViewController()
         let vc4 = AccountViewController()
         
-        vc1.navigationItem.largeTitleDisplayMode = .automatic
         vc2.navigationItem.largeTitleDisplayMode = .automatic
         vc3.navigationItem.largeTitleDisplayMode = .automatic
         vc4.navigationItem.largeTitleDisplayMode = .automatic
@@ -27,10 +26,10 @@ class MainTabViewController: UITabBarController {
         let nav3 = UINavigationController(rootViewController: vc3)
         let nav4 = UINavigationController(rootViewController: vc4)
         
-        nav1.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "waterbottle"), selectedImage: UIImage(systemName: "waterbottle.fill"))
-        nav2.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "magnifyingglass.circle"), selectedImage: UIImage(systemName: "magnifyingglass.circle.fill"))
-        nav3.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "bag"), selectedImage: UIImage(systemName: "bag.fill"))
-        nav4.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "person.crop.circle"), selectedImage: UIImage(systemName: "person.crop.circle.fill"))
+        nav1.tabBarItem = UITabBarItem(title: "五十嵐", image: UIImage(systemName: "waterbottle"), selectedImage: UIImage(systemName: "waterbottle.fill"))
+        nav2.tabBarItem = UITabBarItem(title: "搜索", image: UIImage(systemName: "magnifyingglass.circle"), selectedImage: UIImage(systemName: "magnifyingglass.circle.fill"))
+        nav3.tabBarItem = UITabBarItem(title: "訂單", image: UIImage(systemName: "bag"), selectedImage: UIImage(systemName: "bag.fill"))
+        nav4.tabBarItem = UITabBarItem(title: "帳戶", image: UIImage(systemName: "person.crop.circle"), selectedImage: UIImage(systemName: "person.crop.circle.fill"))
         
         nav1.setupNavBarColor()
         nav2.setupNavBarColor()
@@ -38,7 +37,7 @@ class MainTabViewController: UITabBarController {
         nav4.setupNavBarColor()
         
         
-        for nav in [nav1, nav2, nav3, nav4] {
+        for nav in [nav2, nav3, nav4] {
             nav.navigationBar.prefersLargeTitles = true
         }
         
@@ -46,6 +45,3 @@ class MainTabViewController: UITabBarController {
     }
 }
 
-#Preview("VC", body: {
-    MainTabViewController()
-})
