@@ -7,9 +7,9 @@
 
 import UIKit
 
-class CollectionMenuTableViewCell: UITableViewCell {
+class CollectionViewMenuCell: UICollectionViewCell {
 
-    static let identifier = "CollectionMenuTableViewCell"
+    static let identifier = "CollectionViewMenuCell"
     
     lazy var segmentedControl: UISegmentedControl = {
         let segmentedControl = UISegmentedControl(items: [
@@ -23,17 +23,12 @@ class CollectionMenuTableViewCell: UITableViewCell {
         segmentedControl.selectedSegmentTintColor = UIColor(red: 0, green: 51/256, blue: 102/256, alpha: 1)
         segmentedControl.selectedSegmentIndex = 0
         segmentedControl.backgroundColor = UIColor.systemBrown
-        segmentedControl.addTarget(self, action: #selector(pageChange), for: .valueChanged)
 
         return segmentedControl
     }()
     
-//    private let collectionMenu:
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.backgroundColor = UIColor(red: 0, green: 51/256, blue: 102/256, alpha: 1)
-        
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         setupUI()
     }
     
@@ -42,28 +37,28 @@ class CollectionMenuTableViewCell: UITableViewCell {
     }
     
     private func setupUI() {
-        contentView.addSubview(segmentedControl)
+        addSubview(segmentedControl)
         
         NSLayoutConstraint.activate([
-            segmentedControl.topAnchor.constraint(equalTo: contentView.topAnchor),
-            segmentedControl.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            segmentedControl.topAnchor.constraint(equalTo: topAnchor),
+            segmentedControl.centerYAnchor.constraint(equalTo: centerYAnchor),
             segmentedControl.widthAnchor.constraint(equalToConstant: 393),
             segmentedControl.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     
-    @objc func pageChange() {
-        switch segmentedControl.selectedSegmentIndex {
-        case 1:
-            contentView.backgroundColor = UIColor.white
-        case 2:
-            contentView.backgroundColor = UIColor.green
-        case 3:
-            contentView.backgroundColor = UIColor.systemBlue
-        default:
-            contentView.backgroundColor = UIColor(red: 0, green: 51/256, blue: 102/256, alpha: 1)
-        }
-    }
+//    @objc func pageChange() {
+//        switch segmentedControl.selectedSegmentIndex {
+//        case 1:
+//            contentView.backgroundColor = UIColor.white
+//        case 2:
+//            contentView.backgroundColor = UIColor.green
+//        case 3:
+//            contentView.backgroundColor = UIColor.systemBlue
+//        default:
+//            contentView.backgroundColor = UIColor(red: 0, green: 51/256, blue: 102/256, alpha: 1)
+//        }
+//    }
     
 
 }

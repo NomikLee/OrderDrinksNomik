@@ -11,61 +11,51 @@ class MenuViewController: UIViewController {
     
     let logoImageView = LogoImageView(frame: .zero)
     
-    private let menuTableView: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.register(CollectionMenuTableViewCell.self, forCellReuseIdentifier: CollectionMenuTableViewCell.identifier)
-        return tableView
+    private let collectionMenuView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.register(CollectionViewMenuCell.self, forCellWithReuseIdentifier: CollectionViewMenuCell.identifier)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.backgroundColor = UIColor(red: 0, green: 51/256, blue: 102/256, alpha: 1)
+        return collectionView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.titleView = logoImageView
         
-        menuTableView.delegate = self
-        menuTableView.dataSource = self
+        collectionMenuView.delegate = self
+        collectionMenuView.dataSource = self
         
         setupMenuUI()
     }
     
     private func setupMenuUI(){
-        view.addSubview(menuTableView)
+        view.addSubview(collectionMenuView)
         
         NSLayoutConstraint.activate([
-            menuTableView.topAnchor.constraint(equalTo: view.topAnchor),
-            menuTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            menuTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            menuTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            collectionMenuView.topAnchor.constraint(equalTo: view.topAnchor),
+            collectionMenuView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            collectionMenuView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            collectionMenuView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
             
         ])
     }
     
 }
 
-extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
+extension MenuViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionMenuTableViewCell.identifier, for: indexPath) as? CollectionMenuTableViewCell else {
-            return UITableViewCell()
-        }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewMenuCell.identifier, for: indexPath) as? CollectionViewMenuCell else { return UICollectionViewCell() }
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 500
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 10
-    }
 }
 
 #Preview("VC", body: {
